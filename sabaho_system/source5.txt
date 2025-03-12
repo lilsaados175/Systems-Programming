@@ -1,0 +1,15 @@
+PROG Start 1000
+      LDA ALPHA
+      LDA BETA
+LOOP +LDA ALPHA
+     ADD BETA
+     USE CDATA
+ABCD Word 5
+BETA WORD 7
+GAMMA BYTE X'AB01'
+DELTA BYTE C'Hello World'
+ALPHA RESW 10
+      USE
+      LDA ALPHA
+      LDA BETA
+      END Prog
